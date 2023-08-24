@@ -140,18 +140,18 @@
 					<br>
 					<p>"അധ്വാനിക്കുന്നവരും ഭാരം വഹിക്കുന്നവരുമായ നിങ്ങളെല്ലാവരും എന്റെ അടുക്കല്‍ വരുവിന്‍; ഞാന്‍ നിങ്ങളെ ആശ്വസിപ്പിക്കാം." -   മത്തായി 11:28-29</p>
 					<br>
-					<p>"Come to me, all you who are weary and burdened, and I will give you rest.." - Matthew 11:28-29</p>
+					<p>"Come to me, all you who are weary and burdened, and I will give you rest." - Matthew 11:28-29</p>
 				</div>
 				<div>
-					<img src="https://wp-media.patheos.com/blogs/sites/719/2018/12/DBA-Adoration-Print.jpg" alt=""/>
+					<img src="https://static.wixstatic.com/media/910b61_b862c95d9e7a4a2b990cbdf50fe61f33~mv2.jpg/v1/fill/w_640,h_800,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/910b61_b862c95d9e7a4a2b990cbdf50fe61f33~mv2.jpg" alt=""/>
 				</div>
 				<div>
-					<h1>13 - 08 - 2023 (week 11)</h1>
+					<h1>20 - 08 - 2023 (week 12)</h1>
 					<br>
 					<br>
-					<p>"അധ്വാനിക്കുന്നവരും ഭാരം വഹിക്കുന്നവരുമായ നിങ്ങളെല്ലാവരും എന്റെ അടുക്കല്‍ വരുവിന്‍; ഞാന്‍ നിങ്ങളെ ആശ്വസിപ്പിക്കാം." -   മത്തായി 11:28-29</p>
+					<p>"ഇതാ, ഞാന്‍ തിരഞ്ഞെടുത്ത എന്റെ ദാസന്‍; എന്റെ ആത്മാവു പ്രസാദിച്ച എന്റെ പ്രിയപ്പെട്ടവന്‍! ഞാന്‍ അവന്റെ മേല്‍ എന്റെ ആത്മാവിനെ അയയ്ക്കും." -   മത്തായി 12:18</p>
 					<br>
-					<p>"Come to me, all you who are weary and burdened, and I will give you rest.." - Matthew 11:28-29</p>
+					<p>"Here is my servant, whom I have chosen; my beloved, with whom my soul is well pleased: I will put my spirit upon him, and he will proclain justice to the gentles." - Matthew 12:18</p>
 				</div>
 			</div>
 		</div>
@@ -168,6 +168,8 @@
 		</ul>
 		<p>Crafted with &hearts; by Joel Boby M </p>
 	</footer>
+
+
 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	<script type="text/javascript">
@@ -216,20 +218,21 @@
 				var source	= $img.attr('src');
 				$('<img/>').load(function(){
 					++loaded;
+					console.log(cnt_images);
 					if(loaded == cnt_images){
 						$loading.hide();
 						$bttn_next.show();
 						$bttn_prev.show();
 						$mybook.show().booklet({
-							name:               null,                            //  
-							width:              800,                             //  
-							height:             500,                             //   
-							speed:              600,                             //  
-							direction:          'LTR',                           //  
-														//  
-							next:               $bttn_next,          			//  
-							prev:               $bttn_prev,          			//  
-													
+							name: null,                            //  
+							width: 800,                             //  
+							height: 500,                             //   
+							speed: 600,                             //  
+							direction: 'LTR',                           //  
+							next: $bttn_next,          			//  
+							prev: $bttn_prev,          			//  
+							startingPage: (cnt_images*2)-1, // Turn to the last page by default
+                    		auto: true // Automatically flip pages						
 						});
 						Cufon.refresh();
 					}
@@ -242,59 +245,4 @@
 </html>
 
 
-
-<!-- 
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Landscape Mode Only</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      display: none; /* Hide the webpage by default */
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f0f0f0;
-    }
-
-    .rotate-message {
-      text-align: center;
-    }
-  </style>
-</head>
-<body>
-  <div class="rotate-message" id="rotateMessage">
-    <p>Please rotate your device to landscape mode to view this website.</p>
-    <img src="landscape-icon.png" alt="Landscape Icon" width="100">
-  </div>
-
-  <script>
-    function checkOrientation() {
-      var rotateMessage = document.getElementById("rotateMessage");
-      if (window.orientation === 0 || window.orientation === 180) {
-        // Portrait mode
-        document.body.style.display = 'none'; // Hide the webpage
-        rotateMessage.style.display = 'block'; // Show the error message
-
-        // Show an alert box
-        alert("Please rotate your device to landscape mode to view this website.");
-      } else {
-        // Landscape mode
-        document.body.style.display = 'block'; // Show the webpage
-        rotateMessage.style.display = 'none'; // Hide the error message
-      }
-    }
-
-    // Check the initial orientation
-    checkOrientation();
-
-    // Listen for orientation change events
-    window.addEventListener("orientationchange", function() {
-      checkOrientation();
-    });
-  </script>
-</body>
-</html> -->
 
