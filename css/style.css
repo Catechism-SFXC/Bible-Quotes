@@ -1,16 +1,15 @@
 body{
     
-	background-image: url("https://newcreeations.org/wp-content/uploads/2016/02/SunWindowHeaven.jpg");
+	background-image: url("https://img.freepik.com/free-photo/beautiful-shot-dark-hills-with-amazing-orange-blue-sunset-horizon_181624-1712.jpg?w=360");
     background-repeat: no-repeat;
-    background-attachment:scroll;
-	/* background-size: 100% 100%;  */
-    background-position: center;
+    background-size: 100% 100%;
 	font-size:12px;
     font-family: 'Oswald', sans-serif;
 }
  
  
-.booklet           {
+.booklet           
+{
 	width:900px;
 	height:707px;
 	position: relative;
@@ -80,8 +79,8 @@ h1
 {
 	color:orange;
 	font-size:60px;	
-	margin:5px 5px 5px 15px;
-	padding-bottom:7px;
+	margin:55px 5px 55px 15px;
+	padding-bottom:60px;
     text-transform: uppercase;
 	text-align: center;
     font-weight:bolder;
@@ -93,7 +92,8 @@ h2
 {
 	color:white;
 	font-size:45px;
-	padding-bottom:0px;
+	margin-bottom: 50px;
+	padding-bottom:60px;
 	text-align: center;
     font-weight: normal;
 	font-family: 'Pacifico', serif;
